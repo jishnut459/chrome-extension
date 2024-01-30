@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extension Trigger</title>
+    <style>
+      #record-button {
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border: none;
+      }
+
+      #record-button.primary {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      #record-button.danger {
+        background-color: #f44336;
+        color: white;
+      }
+      .parent-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-div">
+      <button id="record-button" class="primary">Start Recording</button>
+    </div>
+    <script src="website.js"></script>
+  </body>
+</html>
