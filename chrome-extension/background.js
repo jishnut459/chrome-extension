@@ -30,15 +30,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
     }
 });
 
-chrome.runtime.onMessage.addListener((message) => {
-    if (message.type === 'doubleClickData') {
-        console.log(message.data);
-    } else if (message.type === 'clickData') {
-        console.log(message.data);
-    }
-});
-
-
+//Helper function to check valid urls before injecting content
 function startsWithHttps(url) {
     url = url.toLowerCase();
     return url.startsWith("https://");
